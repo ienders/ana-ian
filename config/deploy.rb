@@ -1,9 +1,10 @@
 require 'bundler/capistrano'
 
+default_environment['PATH']='/home/ienders/.gems/bin:/usr/lib/ruby/gems/1.8/bin:/usr/local/bin:/usr/bin:/bin'
 default_run_options[:pty] = true
 
-set :user, 'ian'
-set :domain, 'ana-ian.com'
+set :user, 'ienders'
+set :domain, '173.236.149.180'
 set :application, 'ana-ian'
 
 set :repository,  "git@github.com:ienders/ana-ian.git"
