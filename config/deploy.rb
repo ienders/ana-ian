@@ -23,4 +23,10 @@ namespace :deploy do
   task :restart do
     run "touch #{current_path}/tmp/restart.txt"
   end
+
+  task :symlink_db do
+    run "ln -s #{deploy_to}/#{shared_dir}/db/production.sqlite3 #{release_path}/db/production.sqlite3" 
+  end
 end
+
+after "deploy:update_code", "deploy:symlink_db"
