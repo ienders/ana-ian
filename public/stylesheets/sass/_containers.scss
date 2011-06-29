@@ -1,0 +1,42 @@
+/********************* Containers ***********************/
+
+.generic { float: left; width: 100% }
+
+.container_wrapper {
+  .stamps {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    z-index: 9999
+  }
+  margin: 0 auto;
+  width: 1209px;
+  padding: 20px 10px 10px 10px;
+  z-index: 10;
+  height: 819px;
+  position: relative;
+  .container { 
+    position: relative;
+    @extend .generic;
+    background: url(/images/containerBG.png) 0px 0px no-repeat;
+    height: 819px;
+    a { font-size: 12px }
+    .wedding_details {
+      position: absolute;
+      top: 230px;
+      left: 20px;
+      width: 580px;
+      .block { line-height: 2.5em; margin-top: 10px }
+    }
+    .rsvp {
+      position: absolute;
+      top: 230px;
+      right: 20px;
+      width: 565px;
+      .rsvp_form {
+        width: 100%;
+        margin-top: 25px;
+      }
+    }
+  }
+}

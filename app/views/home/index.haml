@@ -1,0 +1,50 @@
+.wedding_details
+  %h2 Wedding Details
+  .headers
+    %span Ana and Ian
+    %span Guest
+    %span Ceremony
+    %span{:style => 'margin-top: 189px'} We
+  %p{:style => 'margin-left: 230px'} are getting married at #{link_to 'Casa Loma', 'http://maps.google.ca/maps?ie=UTF8&q=casa+loma+map&fb=1&gl=ca&hq=casa+loma&hnear=0x89d4cb90d7c63ba5:0x323555502ab4c477,Toronto,+ON&cid=0,0,7024710250092976207&ll=43.677742,-79.412291&spn=0.012089,0.032165&z=16&iwloc=A', :target => '_blank'}, 30 September 2011.
+  %p{:style => 'margin-left: 83px'} will be admitted for seating at the conservatory at 5:30pm.
+  %p{:style => 'margin-left: 162px'} will start at 6pm followed by the reception at the Library.
+  .clear
+  %h2 We are registered at 
+  = link_to 'http://www.newlywish.com/registry/ana_carter_and_ian_enders', 'http://www.newlywish.com/registry/ana_carter_and_ian_enders', :target => '_blank', :style => 'margin-top: 20px; display: block'
+  %h2 Hotels and accomodations
+  %p.block!
+    ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; have reserved rooms at the #{link_to('Park Hyatt Toronto', 'http://parktoronto.hyatt.com/', :target => '_blank')}, a 5-10 minutes drive from our #{link_to('venue', 'http://maps.google.com/maps?saddr=1+Austin+Terrace,+Toronto,+Ontario,+Canada&daddr=4+Avenue+Road+Toronto,+Ontario+M5R+2E8+Canada&hl=en&ll=43.673971,-79.40212&spn=0.01209,0.027187&sll=43.668718,-79.394157&sspn=0.012091,0.019011&geocode=FUp6mgIdpk5E-ymzoSXPnTQriDHysvYtQB3RaQ%3BFe5UmgIdk4pE-ynPGqjVujQriDFPdpD5PHKD-Q&mra=ls&z=16', :target => '_blank')}. We recommend booking a room at this location before August 29th, however, you may feel free to make other arrangements as you see fit. To reserve a room go to #{link_to'https://resweb.passkey.com/go/ENCA', 'https://resweb.passkey.com/go/ENCA', :target => '_blank'} or call 1888 591 1234.
+  
+.rsvp 
+  %h2 RSVP
+  .headers
+    %span Please
+  %p{:style => 'margin-left: 110px'} fill form for each invited guest (including plus ones)
+  .clear
+  
+  .rsvp_form
+    %label First Name:
+    = text_field_tag 'first_name', nil, :class => 'textfield'
+    %label Last Name:
+    = text_field_tag 'last_name', nil, :class => 'textfield'
+    .clear
+    = check_box_tag 'will_attend', 'yes', true, :class => 'checkbox'
+    %label{:for => 'will_attend'} Will attend?
+    .clear
+    %label Select your meal option:
+    = radio_button_tag 'option', 'chicken', true, :class => 'radiobutton'
+    %label{:for => 'option_chicken'} Chicken
+    = radio_button_tag 'option', 'beef', false, :class => 'radiobutton'
+    %label{:for => 'option_beef'} Beef
+    = radio_button_tag 'option', 'fish', false, :class => 'radiobutton'
+    %label{:for => 'option_fish'} Fish
+    = radio_button_tag 'option', 'vegetarian', false, :class => 'radiobutton'
+    %label{:for => 'option_vegetarian'} Vegetarian
+    .clear
+    %label Considerations:
+    = text_area_tag 'considerations', nil, :class => 'textarea'
+    .clear
+    = submit_tag "Send", :class => 'btns_send'
+    
+    %p#rsvp_success Your RSVP has been submitted.
+    %p#rsvp_error An error occurred, please try again.

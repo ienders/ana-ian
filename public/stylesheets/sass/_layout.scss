@@ -1,0 +1,154 @@
+/***********************AnaIan***********************/
+
+$off-white: #fcfdf5;
+$blue: #05437c;
+$grey: #484646;
+
+html, * {
+ margin:0;
+ padding:0;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: $off-white;
+  text-align: left;
+  font-size: 11px;
+  color: $grey;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  border: 0 none; 
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+.main {
+ display: block;
+ margin: 0 auto;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ z-index: 3;
+}
+
+.background { 
+  height: 100%; 
+  position: absolute; 
+  width: 100%; 
+  top: 0px; 
+  left: 0px; 
+  img { 
+    position: fixed; 
+    width: 0px; 
+    height: 0px;
+  }
+}
+
+.clear {
+  clear: both;
+  line-height: 0px;
+  height: 0px;
+}
+
+img { border: none }
+p { font-size: 12px; margin-top: 19px; float: left; }
+
+a {  outline:none; color: $grey; }
+a:link { text-decoration: none; }    
+a:visited { text-decoration: none; } 
+a:hover { text-decoration: underline; }  
+a:active { text-decoration: underline; }
+
+label { 
+  float: left; 
+  font-size: 14px; 
+  margin: 5px 10px 15px 0;
+  &.short { width: 85px }
+  &.regular { width: 162px }
+  &.long { width: 100% }
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 45px 0 5px 0;
+  padding: 0px;
+  color: $grey;
+}
+
+.checkbox, .radiobutton { float: left; margin: 8px 10px 0 0; width: 13px; height: 13px }
+.radio { float: left; width: 13px; height: 13px; margin: 7px 10px 0 0 }
+
+.textfield { 
+  float: left; 
+  padding: 4px; 
+  margin: 0 10px 10px 0;
+  background-color: #fff;
+  border: 1px solid #bcb9b9;
+  width: 165px;
+}
+
+.textarea {
+  float: left; 
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bcb9b9;
+  margin: 0 0 10px 0;
+  width: 555px;
+  height: 50px;
+}
+
+.btns_submit {
+  width: 143px;
+  height: 83px;
+  border: 0px;
+  outline: none;
+  padding: 0px;
+  float: right;
+  margin-top: 30px;
+  text-indent: -9999px;
+  cursor: pointer;
+  background-image: url('/images/submit_btn.jpg');
+  background-position: 0 0px;
+  &:hover { background-position: 0 -83px }
+}
+
+.btns_send {
+  width: 193px;
+  height: 105px;
+  border: 0px;
+  outline: none;
+  padding: 0px;
+  float: right;
+  margin-top: 30px;
+  text-indent: -9999px;
+  cursor: pointer;
+  background-image: url('/images/send_btn.jpg');
+  background-position: 0 0px;
+  &:hover { background-position: 0 -105px }
+}
+
+.headers {
+  position: absolute;
+  width: 232px;
+  top: 80px;
+  left: 0px;
+  span { font-size: 28px; float: left; width: 100% }
+}
+
+.footer { 
+  position: absolute;
+  bottom: 123px;
+  right: 419px;
+  font-size: 12px;
+  p { font-size: 20px; float: none; margin: 0px }
+  a { text-decoration: none }
+}
+
+.error { font-size: 14px; font-weight: bold; padding: 0px; margin: 0px; display: none }
+#rsvp_error { @extend .error; color: red;  }
+#rsvp_success { @extend .error; color: $blue; }

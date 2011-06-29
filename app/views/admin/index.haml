@@ -1,0 +1,16 @@
+%table{:cellspacing => '0', :cellpadding => '0'}
+  %tr
+    %th.col1 Last Name
+    %th.col2 First Name
+    %th.col3 Attending
+    %th.col4 Meal Option
+    %th.col5 Considerations
+    %th.col6 RSVPed at
+  - @rsvps.each_with_index do |rsvp, i|
+    %tr{:class => i % 2 == 0 ? 'alt' : ''}
+      %td.col1 #{rsvp.last_name}
+      %td.col2 #{rsvp.first_name}
+      %td.center-align= rsvp.attend
+      %td.center-align= rsvp.meal_option
+      %td!= !rsvp.considerations.blank? ? rsvp.notes : '&nbsp;'
+      %td.col6= rsvp.updated_at

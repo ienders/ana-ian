@@ -1,0 +1,220 @@
+/***********************AnaIan***********************/
+html, * {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #fcfdf5;
+  text-align: left;
+  font-size: 11px;
+  color: #484646;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  border: 0 none;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal; }
+
+.main {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3; }
+
+.background {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px; }
+  .background img {
+    position: fixed;
+    width: 0px;
+    height: 0px; }
+
+.clear {
+  clear: both;
+  line-height: 0px;
+  height: 0px; }
+
+img {
+  border: none; }
+
+p {
+  font-size: 12px;
+  margin-top: 19px;
+  float: left; }
+
+a {
+  outline: none;
+  color: #484646; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  text-decoration: underline; }
+
+label {
+  float: left;
+  font-size: 14px;
+  margin: 5px 10px 15px 0; }
+  label.short {
+    width: 85px; }
+  label.regular {
+    width: 162px; }
+  label.long {
+    width: 100%; }
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 45px 0 5px 0;
+  padding: 0px;
+  color: #484646; }
+
+.checkbox, .radiobutton {
+  float: left;
+  margin: 8px 10px 0 0;
+  width: 13px;
+  height: 13px; }
+
+.radio {
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin: 7px 10px 0 0; }
+
+.textfield {
+  float: left;
+  padding: 4px;
+  margin: 0 10px 10px 0;
+  background-color: #fff;
+  border: 1px solid #bcb9b9;
+  width: 165px; }
+
+.textarea {
+  float: left;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bcb9b9;
+  margin: 0 0 10px 0;
+  width: 555px;
+  height: 50px; }
+
+.btns_submit {
+  width: 143px;
+  height: 83px;
+  border: 0px;
+  outline: none;
+  padding: 0px;
+  float: right;
+  margin-top: 30px;
+  text-indent: -9999px;
+  cursor: pointer;
+  background-image: url("/images/submit_btn.jpg");
+  background-position: 0 0px; }
+  .btns_submit:hover {
+    background-position: 0 -83px; }
+
+.btns_send {
+  width: 193px;
+  height: 105px;
+  border: 0px;
+  outline: none;
+  padding: 0px;
+  float: right;
+  margin-top: 30px;
+  text-indent: -9999px;
+  cursor: pointer;
+  background-image: url("/images/send_btn.jpg");
+  background-position: 0 0px; }
+  .btns_send:hover {
+    background-position: 0 -105px; }
+
+.headers {
+  position: absolute;
+  width: 232px;
+  top: 80px;
+  left: 0px; }
+  .headers span {
+    font-size: 28px;
+    float: left;
+    width: 100%; }
+
+.footer {
+  position: absolute;
+  bottom: 123px;
+  right: 419px;
+  font-size: 12px; }
+  .footer p {
+    font-size: 20px;
+    float: none;
+    margin: 0px; }
+  .footer a {
+    text-decoration: none; }
+
+.error, #rsvp_error, #rsvp_success {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  display: none; }
+
+#rsvp_error {
+  color: red; }
+
+#rsvp_success {
+  color: #05437c; }
+
+/********************* Containers ***********************/
+.generic, .container_wrapper .container {
+  float: left;
+  width: 100%; }
+
+.container_wrapper {
+  margin: 0 auto;
+  width: 1209px;
+  padding: 20px 10px 10px 10px;
+  z-index: 10;
+  height: 819px;
+  position: relative; }
+  .container_wrapper .stamps {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    z-index: 9999; }
+  .container_wrapper .container {
+    position: relative;
+    background: url(/images/containerBG.png) 0px 0px no-repeat;
+    height: 819px; }
+    .container_wrapper .container a {
+      font-size: 12px; }
+    .container_wrapper .container .wedding_details {
+      position: absolute;
+      top: 230px;
+      left: 20px;
+      width: 580px; }
+      .container_wrapper .container .wedding_details .block {
+        line-height: 2.5em;
+        margin-top: 10px; }
+    .container_wrapper .container .rsvp {
+      position: absolute;
+      top: 230px;
+      right: 20px;
+      width: 565px; }
+      .container_wrapper .container .rsvp .rsvp_form {
+        width: 100%;
+        margin-top: 25px; }

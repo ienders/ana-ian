@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title Ana & Ian's Wedding
+    = javascript_include_tag 'jquery'
+    = javascript_include_tag 'cufon-yui'
+    = javascript_include_tag 'application'
+    = javascript_include_tag 'Jefferson_400.font'
+    = javascript_include_tag 'Old_Rubber_Stamp_400.font'
+    = javascript_include_tag 'resize_background'
+    = stylesheet_link_tag 'style'
+%body
+  .main
+    .background
+      = image_tag('BG.jpg')
+
+    .container_wrapper
+      = image_tag 'butters_toby.png', :alt => 'butters and toby', :class => 'stamps'
+      .container= yield
+      .footer
+        %span! - Thank you, 
+        %p #{link_to 'Ana', 'http://anamonster.com', :target => '_blank'} and #{link_to 'Ian', 'http://addictedtoian.com', :target => '_blank'}

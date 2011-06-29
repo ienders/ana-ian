@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title Kayleigh Enders & Andy McLean Wedding (Admin)
+    - bundle(:name => 'admin') do
+      = javascript_include_tag 'jquery'
+      = javascript_include_tag 'rails'
+      = javascript_include_tag 'application'
+      = stylesheet_link_tag 'admin'
+%body
+  #main= yield
