@@ -22,29 +22,4 @@
   %p{:style => 'margin-left: 110px'} fill form for each invited guest (including plus ones)
   .clear
   
-  .rsvp_form
-    %label First Name:
-    = text_field_tag 'first_name', nil, :class => 'textfield'
-    %label Last Name:
-    = text_field_tag 'last_name', nil, :class => 'textfield'
-    .clear
-    = check_box_tag 'will_attend', 'yes', true, :class => 'checkbox'
-    %label{:for => 'will_attend'} Will attend?
-    .clear
-    %label Select your meal option:
-    = radio_button_tag 'option', 'chicken', true, :class => 'radiobutton'
-    %label{:for => 'option_chicken'} Chicken
-    = radio_button_tag 'option', 'beef', false, :class => 'radiobutton'
-    %label{:for => 'option_beef'} Beef
-    = radio_button_tag 'option', 'fish', false, :class => 'radiobutton'
-    %label{:for => 'option_fish'} Fish
-    = radio_button_tag 'option', 'vegetarian', false, :class => 'radiobutton'
-    %label{:for => 'option_vegetarian'} Vegetarian
-    .clear
-    %label Considerations:
-    = text_area_tag 'considerations', nil, :class => 'textarea'
-    .clear
-    = submit_tag "Send", :class => 'btns_send'
-    
-    %p#rsvp_success Your RSVP has been submitted.
-    %p#rsvp_error An error occurred, please try again.
+  .rsvp_form= render :partial => 'rsvp_form'

@@ -1,0 +1,26 @@
+- form_for(@rsvp, :remote => true) do |f|
+  %label First Name:
+  = f.text_field :first_name, :class => 'textfield'
+  %label Last Name:
+  = f.text_field :last_name, :class => 'textfield'
+  .clear
+  = f.check_box :attend, :class => 'checkbox'
+  = f.label :attend, 'Will attend?'
+  .clear
+  %label Select your meal option:
+  = f.radio_button :meal_choice, 'chicken', :class => 'radiobutton'
+  %label{:for => 'option_chicken'} Chicken
+  = f.radio_button :meal_choice, 'beef', :class => 'radiobutton'
+  %label{:for => 'option_beef'} Beef
+  = f.radio_button :meal_choice, 'fish', :class => 'radiobutton'
+  %label{:for => 'option_fish'} Fish
+  = f.radio_button :meal_choice, 'vegetarian', :class => 'radiobutton'
+  %label{:for => 'option_vegetarian'} Vegetarian
+  .clear
+  %label Considerations:
+  = f.text_area :considerations, :class => 'textarea'
+  .clear
+  = submit_tag "Send", :class => 'btns_send'
+  
+  %p#rsvp_success Your RSVP has been submitted.
+  %p#rsvp_error An error occurred, please try again.

@@ -2,13 +2,15 @@
 %html
   %head
     %title Ana & Ian's Wedding
-    = javascript_include_tag 'jquery'
-    = javascript_include_tag 'cufon-yui'
-    = javascript_include_tag 'application'
-    = javascript_include_tag 'Jefferson_400.font'
-    = javascript_include_tag 'Old_Rubber_Stamp_400.font'
-    = javascript_include_tag 'resize_background'
-    = stylesheet_link_tag 'style'
+    - bundle do |main|
+      = javascript_include_tag 'jquery'
+      = javascript_include_tag 'rails'
+      = javascript_include_tag 'cufon-yui'
+      = javascript_include_tag 'application'
+      = javascript_include_tag 'Jefferson_400.font'
+      = javascript_include_tag 'Old_Rubber_Stamp_400.font'
+      = javascript_include_tag 'resize_background'
+      = stylesheet_link_tag 'style'
 %body
   .main
     .background
