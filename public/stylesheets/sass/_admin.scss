@@ -6,15 +6,12 @@ body {
   table {
     width: 100%;
     vertical-align: top;
-    th { 
+    th, td { 
       font-size: 12px; 
       padding: 5px 0; 
       text-align: left;
-      background-color: #c9f7fa;
     }
-    td { 
-      @extend th;
-      border-bottom: 1px solid #ccc
-    }
+    td { border-bottom: 1px solid #ccc }
+    th { background-color: #c9f7fa; }
   }
 }
