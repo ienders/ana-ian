@@ -1,0 +1,20 @@
+/***********************Admin***********************/
+
+body {
+  font-family: Georgia;
+  color: #444;
+  table {
+    width: 100%;
+    vertical-align: top;
+    th { 
+      font-size: 12px; 
+      padding: 5px 0; 
+      text-align: left;
+      background-color: #c9f7fa;
+    }
+    td { 
+      @extend th;
+      border-bottom: 1px solid #ccc
+    }
+  }
+}
