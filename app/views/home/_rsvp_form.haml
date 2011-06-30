@@ -9,13 +9,13 @@
   .clear
   %label Select your meal option:
   = f.radio_button :meal_choice, 'chicken', :class => 'radiobutton'
-  %label{:for => 'option_chicken'} Chicken
+  %label{:for => 'rsvp_meal_choice_chicken'} Chicken
   = f.radio_button :meal_choice, 'beef', :class => 'radiobutton'
-  %label{:for => 'option_beef'} Beef
+  %label{:for => 'rsvp_meal_choice_beef'} Beef
   = f.radio_button :meal_choice, 'fish', :class => 'radiobutton'
-  %label{:for => 'option_fish'} Fish
+  %label{:for => 'rsvp_meal_choice_fish'} Fish
   = f.radio_button :meal_choice, 'vegetarian', :class => 'radiobutton'
-  %label{:for => 'option_vegetarian'} Vegetarian
+  %label{:for => 'rsvp_meal_choice_vegetarian'} Vegetarian
   .clear
   %label Considerations:
   = f.text_area :considerations, :class => 'textarea'
