@@ -1,16 +1,14 @@
 require 'bundler/capistrano'
 
-default_environment['PATH']='/home/ienders/.gems/bin:/usr/lib/ruby/gems/1.8/bin:/usr/local/bin:/usr/bin:/bin'
-default_run_options[:pty] = true
-
-set :user, 'ienders'
-set :domain, '173.236.149.180'
 set :application, 'ana-ian'
-
-set :repository,  "git@github.com:ienders/ana-ian.git"
-set :deploy_to, "/home/ienders/ana-ian.com"
-set :deploy_via, :remote_cache
+set :user, 'root'
+set :runner, user
+set :domain, '173.203.198.117'
 set :scm, 'git'
+set :repository,  "git@github.com:ienders/ana-ian.git"
+set :deploy_to, "/var/www/#{application}"
+set :deploy_via, :remote_cache
+set :source_profile, ''
 set :branch, 'master'
 set :git_shallow_clone, 1
 set :scm_verbose, true
@@ -29,4 +27,5 @@ namespace :deploy do
   end
 end
 
+before "deploy:migrate", "deploy:load_releases"
 after "deploy:update_code", "deploy:symlink_db"
