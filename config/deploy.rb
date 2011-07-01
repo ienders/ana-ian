@@ -1,7 +1,7 @@
 require 'bundler/capistrano'
 
 set :application, 'ana-ian'
-set :user, 'root'
+set :user, 'deploy'
 set :runner, user
 set :domain, '173.203.198.117'
 set :scm, 'git'
