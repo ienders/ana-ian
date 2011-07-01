@@ -218,3 +218,9 @@ h2 {
       .container_wrapper .container .rsvp .rsvp_form {
         width: 100%;
         margin-top: 25px; }
+
+.container #user_new p {
+  width: 1179px;
+  margin: 0 0 15px 30px; }
+  .container #user_new p label {
+    width: 100%; }

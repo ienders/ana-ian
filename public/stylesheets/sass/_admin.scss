@@ -1,0 +1,17 @@
+/***********************Admin***********************/
+
+body {
+  font-family: Georgia;
+  color: #444;
+  table {
+    width: 100%;
+    vertical-align: top;
+    th, td { 
+      font-size: 12px; 
+      padding: 5px 0; 
+      text-align: left;
+    }
+    td { border-bottom: 1px solid #ccc }
+    th { background-color: #c9f7fa; }
+  }
+}
