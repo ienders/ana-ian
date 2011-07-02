@@ -37,7 +37,7 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
-    devise (1.4.0)
+    devise (1.4.2)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
       warden (~> 1.0.3)
@@ -81,8 +81,7 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.4)
     rake (0.9.2)
-    rdoc (3.7)
-    sqlite3-ruby (1.2.4)
+    rdoc (3.8)
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
@@ -98,4 +97,3 @@ DEPENDENCIES
   devise
   haml
   rails (= 3.0.9)
-  sqlite3-ruby (= 1.2.4)
