@@ -10,8 +10,13 @@ body {
       font-size: 12px; 
       padding: 5px 0; 
       text-align: left;
+      padding-right: 10px
     }
     td { border-bottom: 1px solid #ccc }
     th { background-color: #c9f7fa; }
+    .col1 { width: 100px }
+    .col2 { width: 100px }
+    .col4 { width: 110px }
+    .col5 { width: 600px }
   }
 }

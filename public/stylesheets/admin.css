@@ -8,8 +8,17 @@ body {
     body table th, body table td {
       font-size: 12px;
       padding: 5px 0;
-      text-align: left; }
+      text-align: left;
+      padding-right: 10px; }
     body table td {
       border-bottom: 1px solid #ccc; }
     body table th {
       background-color: #c9f7fa; }
+    body table .col1 {
+      width: 100px; }
+    body table .col2 {
+      width: 100px; }
+    body table .col4 {
+      width: 110px; }
+    body table .col5 {
+      width: 600px; }
