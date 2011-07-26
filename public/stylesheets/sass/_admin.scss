@@ -6,17 +6,20 @@ body {
   table {
     width: 100%;
     vertical-align: top;
+    border-top: 1px solid #d8d8d8;
     th, td { 
       font-size: 12px; 
-      padding: 5px 0; 
+      padding: 5px; 
       text-align: left;
-      padding-right: 10px
+      border-bottom: 1px solid #d8d8d8
     }
-    td { border-bottom: 1px solid #ccc }
     th { background-color: #c9f7fa; }
     .col1 { width: 100px }
     .col2 { width: 100px }
     .col4 { width: 110px }
     .col5 { width: 600px }
+    .alt {
+      td { background-color: #ebebeb }
+    }
   }
 }

@@ -4,14 +4,13 @@ body {
   color: #444; }
   body table {
     width: 100%;
-    vertical-align: top; }
+    vertical-align: top;
+    border-top: 1px solid #d8d8d8; }
     body table th, body table td {
       font-size: 12px;
-      padding: 5px 0;
+      padding: 5px;
       text-align: left;
-      padding-right: 10px; }
-    body table td {
-      border-bottom: 1px solid #ccc; }
+      border-bottom: 1px solid #d8d8d8; }
     body table th {
       background-color: #c9f7fa; }
     body table .col1 {
@@ -22,3 +21,5 @@ body {
       width: 110px; }
     body table .col5 {
       width: 600px; }
+    body table .alt td {
+      background-color: #ebebeb; }
