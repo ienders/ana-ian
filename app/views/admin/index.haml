@@ -1,3 +1,18 @@
+%h2 Totals
+%table{:cellspacing => '0', :cellpadding => '0'}
+  %tr
+    - @totals.keys.each do |k|
+      %th= k.titleize
+    %th Attending
+    %th Not Attending
+  %tr
+    - @totals.keys.each do |k|
+      %td= @totals[k]
+    %td= Rsvp.where(:attend => true).size
+    %td= Rsvp.where(:attend => false).size
+
+%h2 Invidual RSVPs
+
 %table{:cellspacing => '0', :cellpadding => '0'}
   %tr
     %th.col1 Last Name

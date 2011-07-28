@@ -6,6 +6,7 @@ class AdminController < ApplicationController
   
   def index
     @rsvps = Rsvp.order('updated_at DESC').all
+    @totals = Rsvp.sum_meal_options
   end
   
 end
