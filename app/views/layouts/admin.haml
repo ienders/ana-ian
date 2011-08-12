@@ -6,7 +6,8 @@
       = javascript_include_tag 'jquery'
       = javascript_include_tag 'rails'
       = javascript_include_tag 'application'
-      = stylesheet_link_tag 'admin'
-    
+    = stylesheet_link_tag 'admin'
+    = stylesheet_link_tag 'admin', :media => 'print'
+  
 %body
   #main= yield

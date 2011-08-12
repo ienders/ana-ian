@@ -3,6 +3,7 @@
 body {
   font-family: Georgia;
   color: #444;
+  h2 { font-size: 21px; font-family: Arial; font-weight: normal }
   table {
     width: 100%;
     vertical-align: top;
@@ -14,9 +15,9 @@ body {
       border-bottom: 1px solid #d8d8d8
     }
     th { background-color: #c9f7fa; }
-    .col1 { width: 100px }
-    .col2 { width: 100px }
-    .col4 { width: 110px }
+    .col1 { width: 120px }
+    .col2 { width: 120px }
+    .col4 { width: 140px }
     .col5 { width: 600px }
     .alt {
       td { background-color: #ebebeb }

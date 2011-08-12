@@ -2,6 +2,10 @@
 body {
   font-family: Georgia;
   color: #444; }
+  body h2 {
+    font-size: 21px;
+    font-family: Arial;
+    font-weight: normal; }
   body table {
     width: 100%;
     vertical-align: top;
@@ -14,11 +18,11 @@ body {
     body table th {
       background-color: #c9f7fa; }
     body table .col1 {
-      width: 100px; }
+      width: 120px; }
     body table .col2 {
-      width: 100px; }
+      width: 120px; }
     body table .col4 {
-      width: 110px; }
+      width: 140px; }
     body table .col5 {
       width: 600px; }
     body table .alt td {
